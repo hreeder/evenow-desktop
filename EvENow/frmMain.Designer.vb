@@ -238,7 +238,7 @@ Partial Class lblOnlinePlayers
         Me.Controls.Add(Me.lblKills)
         Me.Controls.Add(Me.lblEveTime)
         Me.Name = "lblOnlinePlayers"
-        Me.Text = "EvE NOW"
+        Me.Text = "EVE NOW"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

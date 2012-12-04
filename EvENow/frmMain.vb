@@ -2,7 +2,7 @@
 
 Public Class lblOnlinePlayers
     Dim api As EveApi
-    Dim hotID As Integer = 30000142
+    Dim hotID As Integer = 30000142     'We need to hold on to the ID number of the hottest system for the killboard links (depending on which kb is active). Make Jita default.
 
     Private Sub timerTQStatus_Tick(sender As Object, e As EventArgs) Handles timerTQStatus.Tick
         updateTQStatus()
