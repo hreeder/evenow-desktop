@@ -1,4 +1,6 @@
-﻿Imports EveAI.Live
+﻿Imports System
+Imports System.Drawing.Text
+Imports EveAI.Live
 
 Public Class lblOnlinePlayers
     Dim api As EveApi
@@ -22,6 +24,7 @@ Public Class lblOnlinePlayers
         updateTQStatus()
         updateKills()
 
+        setFonts()
     End Sub
 
     Private Sub updateEveTime()
@@ -111,5 +114,10 @@ Public Class lblOnlinePlayers
         If configForm.ShowDialog() = DialogResult.OK Then
 
         End If
+    End Sub
+
+    Private Sub setFonts()
+        lblEveTime.Font = CustomFont.GetInstance(12, FontStyle.Bold)
+        valEveTime.Font = CustomFont.GetInstance(14, FontStyle.Bold)
     End Sub
 End Class

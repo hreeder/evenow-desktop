@@ -98,7 +98,7 @@ Partial Class frmConfig
         Me.Name = "frmConfig"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "EVE NOW: Configuration"
+        Me.Text = "EVE NOW: Configuration (BETA 0.1)"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()

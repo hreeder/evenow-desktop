@@ -82,6 +82,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomFont.vb" />
     <Compile Include="frmConfig.Designer.vb">
       <DependentUpon>frmConfig.vb</DependentUpon>
     </Compile>
@@ -136,6 +137,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <EmbeddedResource Include="res\Abel-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CCP\EveAI.Core.dll" />
