@@ -23,6 +23,7 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.lblEveTime = New System.Windows.Forms.Label()
         Me.lblTQStatus = New System.Windows.Forms.Label()
         Me.valTQStatus = New System.Windows.Forms.Label()
@@ -210,6 +211,7 @@ Partial Class frmMain
         '
         'btnConfig
         '
+        Me.btnConfig.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnConfig.Location = New System.Drawing.Point(427, 437)
         Me.btnConfig.Name = "btnConfig"
         Me.btnConfig.Size = New System.Drawing.Size(68, 27)
@@ -221,7 +223,7 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.EvENow.My.Resources.Resources.bg4
+        Me.BackgroundImage = Global.EVENOW.My.Resources.Resources.bg4
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(496, 465)
         Me.Controls.Add(Me.btnConfig)
@@ -237,6 +239,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblTQStatus)
         Me.Controls.Add(Me.lblKills)
         Me.Controls.Add(Me.lblEveTime)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.Text = "EVE NOW (BETA 0.1)"
         Me.ResumeLayout(False)
