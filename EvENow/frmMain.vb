@@ -22,7 +22,6 @@ Public Class lblOnlinePlayers
         updateTQStatus()
         updateKills()
 
-
     End Sub
 
     Private Sub updateEveTime()
