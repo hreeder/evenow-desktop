@@ -2,7 +2,7 @@
 Imports System.Drawing.Text
 Imports EveAI.Live
 
-Public Class lblOnlinePlayers
+Public Class frmMain
     Dim api As EveApi
     Dim hotID As Integer = 30000142     'We need to hold on to the ID number of the hottest system for the killboard links (depending on which kb is active). Make Jita default.
 
@@ -117,7 +117,17 @@ Public Class lblOnlinePlayers
     End Sub
 
     Private Sub setFonts()
-        lblEveTime.Font = CustomFont.GetInstance(12, FontStyle.Bold)
-        valEveTime.Font = CustomFont.GetInstance(14, FontStyle.Bold)
+        lblEveTime.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        valEveTime.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        lblTQStatus.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        valTQStatus.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        lblOnlinePlayers.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        valOnlinePlayers.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        lblKills.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        valKills.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        lblMostShipsDestroyed.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        valMostShipsDestroyed.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        lblShipsDestroyedInHotSystem.Font = CustomFont.GetInstance(18, FontStyle.Bold)
+        valShipsDestroyedInHotSystem.Font = CustomFont.GetInstance(18, FontStyle.Bold)
     End Sub
 End Class

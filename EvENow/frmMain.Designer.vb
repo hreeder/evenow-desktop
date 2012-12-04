@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class lblOnlinePlayers
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -30,7 +30,7 @@ Partial Class lblOnlinePlayers
         Me.timerTQStatus = New System.Windows.Forms.Timer(Me.components)
         Me.valEveTime = New System.Windows.Forms.Label()
         Me.valOnlinePlayers = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblOnlinePlayers = New System.Windows.Forms.Label()
         Me.apiQueryTQStatus = New System.ComponentModel.BackgroundWorker()
         Me.apiQueryKillCount = New System.ComponentModel.BackgroundWorker()
         Me.lblKills = New System.Windows.Forms.Label()
@@ -113,17 +113,17 @@ Partial Class lblOnlinePlayers
         Me.valOnlinePlayers.TabIndex = 4
         Me.valOnlinePlayers.Text = "UNKNOWN"
         '
-        'Label2
+        'lblOnlinePlayers
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(12, 159)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(139, 29)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Online Players"
+        Me.lblOnlinePlayers.AutoSize = True
+        Me.lblOnlinePlayers.BackColor = System.Drawing.Color.Transparent
+        Me.lblOnlinePlayers.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOnlinePlayers.ForeColor = System.Drawing.Color.White
+        Me.lblOnlinePlayers.Location = New System.Drawing.Point(12, 159)
+        Me.lblOnlinePlayers.Name = "lblOnlinePlayers"
+        Me.lblOnlinePlayers.Size = New System.Drawing.Size(139, 29)
+        Me.lblOnlinePlayers.TabIndex = 3
+        Me.lblOnlinePlayers.Text = "Online Players"
         '
         'apiQueryTQStatus
         '
@@ -217,18 +217,18 @@ Partial Class lblOnlinePlayers
         Me.btnConfig.Text = "Configure"
         Me.btnConfig.UseVisualStyleBackColor = True
         '
-        'lblOnlinePlayers
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.EvENow.My.Resources.Resources.bg4_mobile
+        Me.BackgroundImage = Global.EvENow.My.Resources.Resources.bg4
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(496, 465)
         Me.Controls.Add(Me.btnConfig)
         Me.Controls.Add(Me.valShipsDestroyedInHotSystem)
         Me.Controls.Add(Me.valOnlinePlayers)
         Me.Controls.Add(Me.lblShipsDestroyedInHotSystem)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblOnlinePlayers)
         Me.Controls.Add(Me.valKills)
         Me.Controls.Add(Me.valEveTime)
         Me.Controls.Add(Me.valMostShipsDestroyed)
@@ -237,7 +237,7 @@ Partial Class lblOnlinePlayers
         Me.Controls.Add(Me.lblTQStatus)
         Me.Controls.Add(Me.lblKills)
         Me.Controls.Add(Me.lblEveTime)
-        Me.Name = "lblOnlinePlayers"
+        Me.Name = "frmMain"
         Me.Text = "EVE NOW (BETA 0.1)"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -250,7 +250,7 @@ Partial Class lblOnlinePlayers
     Friend WithEvents timerTQStatus As System.Windows.Forms.Timer
     Friend WithEvents valEveTime As System.Windows.Forms.Label
     Friend WithEvents valOnlinePlayers As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblOnlinePlayers As System.Windows.Forms.Label
     Friend WithEvents apiQueryTQStatus As System.ComponentModel.BackgroundWorker
     Friend WithEvents apiQueryKillCount As System.ComponentModel.BackgroundWorker
     Friend WithEvents lblKills As System.Windows.Forms.Label
