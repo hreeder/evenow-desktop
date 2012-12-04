@@ -1,5 +1,7 @@
-﻿Public Class lblOnlinePlayers
-    Dim api As EveAI.Live.EveApi
+﻿Imports EveAI.Live
+
+Public Class lblOnlinePlayers
+    Dim api As EveApi
     Dim hotID As Integer = 30000142
 
     Private Sub timerTQStatus_Tick(sender As Object, e As EventArgs) Handles timerTQStatus.Tick
@@ -15,10 +17,12 @@
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        api = New EveAI.Live.EveApi
+        api = New EveApi
         updateEveTime()
         updateTQStatus()
         updateKills()
+
+
     End Sub
 
     Private Sub updateEveTime()
@@ -43,7 +47,7 @@
     End Sub
 
     Private Sub apiQueryTQStatus_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles apiQueryTQStatus.DoWork
-        Dim status As EveAI.Live.ServerStatus = api.GetServerStatus
+        Dim status As ServerStatus = api.GetServerStatus
 
         Dim output(0 To 1) As String
 
@@ -64,11 +68,11 @@
     End Sub
 
     Private Sub apiQueryKillCount_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles apiQueryKillCount.DoWork
-        Dim kills As List(Of EveAI.Live.Map.MapKill) = api.GetMapKillEntries
+        Dim kills As List(Of Map.MapKill) = api.GetMapKillEntries
 
         Dim output(0 To 3) As String
 
-        For Each kill As EveAI.Live.Map.MapKill In kills
+        For Each kill As Map.MapKill In kills
             output(0) += kill.ShipKills
 
             If kill.ShipKills >= output(2) Then
