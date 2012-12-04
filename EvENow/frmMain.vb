@@ -93,17 +93,23 @@ Public Class lblOnlinePlayers
     End Sub
 
     Private Sub valMostShipsDestroyed_Click(sender As Object, e As EventArgs) Handles valMostShipsDestroyed.Click
-        Dim killboard As String = "eve-kill"
         Dim url As String = ""
 
-        If killboard = "eve-kill" Then
+        If My.Settings.killboardProvider = "eve-kill" Then
             url = "http://eve-kill.net/?a=system_detail&sys_name=" & valMostShipsDestroyed.Text
-        ElseIf killboard = "zKb" Then
+        ElseIf My.Settings.killboardProvider = "zKb" Then
             url = "http://zkillboard.com/system/" & hotID
-        ElseIf killboard = "pleaseignore" Then
+        ElseIf My.Settings.killboardProvider = "pleaseignore" Then
             url = "http://kb.pleaseignore.com/?a=system_detail&sys_id=" & hotID
         End If
 
         Process.Start(url)
+    End Sub
+
+    Private Sub btnConfig_Click(sender As Object, e As EventArgs) Handles btnConfig.Click
+        Dim configForm As New frmConfig
+        If configForm.ShowDialog() = DialogResult.OK Then
+            My.Settings.Save()
+        End If
     End Sub
 End Class
