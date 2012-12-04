@@ -40,7 +40,7 @@ Partial Class lblOnlinePlayers
         Me.lblShipsDestroyedInHotSystem = New System.Windows.Forms.Label()
         Me.valShipsDestroyedInHotSystem = New System.Windows.Forms.Label()
         Me.timerKills = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnConfig = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblEveTime
@@ -208,14 +208,14 @@ Partial Class lblOnlinePlayers
         Me.timerKills.Enabled = True
         Me.timerKills.Interval = 600000
         '
-        'Button1
+        'btnConfig
         '
-        Me.Button1.Location = New System.Drawing.Point(478, -1)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(18, 19)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "c"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnConfig.Location = New System.Drawing.Point(478, -1)
+        Me.btnConfig.Name = "btnConfig"
+        Me.btnConfig.Size = New System.Drawing.Size(18, 19)
+        Me.btnConfig.TabIndex = 5
+        Me.btnConfig.Text = "c"
+        Me.btnConfig.UseVisualStyleBackColor = True
         '
         'lblOnlinePlayers
         '
@@ -224,7 +224,7 @@ Partial Class lblOnlinePlayers
         Me.BackgroundImage = Global.EvENow.My.Resources.Resources.bg4_mobile
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(496, 465)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnConfig)
         Me.Controls.Add(Me.valShipsDestroyedInHotSystem)
         Me.Controls.Add(Me.valOnlinePlayers)
         Me.Controls.Add(Me.lblShipsDestroyedInHotSystem)
@@ -260,6 +260,6 @@ Partial Class lblOnlinePlayers
     Friend WithEvents lblShipsDestroyedInHotSystem As System.Windows.Forms.Label
     Friend WithEvents valShipsDestroyedInHotSystem As System.Windows.Forms.Label
     Friend WithEvents timerKills As System.Windows.Forms.Timer
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnConfig As System.Windows.Forms.Button
 
 End Class
