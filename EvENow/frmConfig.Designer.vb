@@ -25,6 +25,8 @@ Partial Class frmConfig
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
+        Me.lblKBProvider = New System.Windows.Forms.Label()
+        Me.cmbKbProvider = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -36,7 +38,7 @@ Partial Class frmConfig
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(277, 274)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(277, 115)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -62,13 +64,33 @@ Partial Class frmConfig
         Me.Cancel_Button.TabIndex = 1
         Me.Cancel_Button.Text = "Cancel"
         '
+        'lblKBProvider
+        '
+        Me.lblKBProvider.AutoSize = True
+        Me.lblKBProvider.Location = New System.Drawing.Point(12, 15)
+        Me.lblKBProvider.Name = "lblKBProvider"
+        Me.lblKBProvider.Size = New System.Drawing.Size(89, 13)
+        Me.lblKBProvider.TabIndex = 1
+        Me.lblKBProvider.Text = "Killboard Provider"
+        '
+        'cmbKbProvider
+        '
+        Me.cmbKbProvider.FormattingEnabled = True
+        Me.cmbKbProvider.Items.AddRange(New Object() {"Eve-Kill", "zKillboard", "kb.pleaseignore.com"})
+        Me.cmbKbProvider.Location = New System.Drawing.Point(107, 12)
+        Me.cmbKbProvider.Name = "cmbKbProvider"
+        Me.cmbKbProvider.Size = New System.Drawing.Size(127, 21)
+        Me.cmbKbProvider.TabIndex = 2
+        '
         'frmConfig
         '
         Me.AcceptButton = Me.OK_Button
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(435, 315)
+        Me.ClientSize = New System.Drawing.Size(435, 156)
+        Me.Controls.Add(Me.cmbKbProvider)
+        Me.Controls.Add(Me.lblKBProvider)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -79,10 +101,13 @@ Partial Class frmConfig
         Me.Text = "EVE NOW: Configuration"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents OK_Button As System.Windows.Forms.Button
     Friend WithEvents Cancel_Button As System.Windows.Forms.Button
+    Friend WithEvents lblKBProvider As System.Windows.Forms.Label
+    Friend WithEvents cmbKbProvider As System.Windows.Forms.ComboBox
 
 End Class

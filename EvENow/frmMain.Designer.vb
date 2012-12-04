@@ -210,11 +210,11 @@ Partial Class lblOnlinePlayers
         '
         'btnConfig
         '
-        Me.btnConfig.Location = New System.Drawing.Point(478, -1)
+        Me.btnConfig.Location = New System.Drawing.Point(427, 437)
         Me.btnConfig.Name = "btnConfig"
-        Me.btnConfig.Size = New System.Drawing.Size(18, 19)
+        Me.btnConfig.Size = New System.Drawing.Size(68, 27)
         Me.btnConfig.TabIndex = 5
-        Me.btnConfig.Text = "c"
+        Me.btnConfig.Text = "Configure"
         Me.btnConfig.UseVisualStyleBackColor = True
         '
         'lblOnlinePlayers

@@ -109,7 +109,7 @@ Public Class lblOnlinePlayers
     Private Sub btnConfig_Click(sender As Object, e As EventArgs) Handles btnConfig.Click
         Dim configForm As New frmConfig
         If configForm.ShowDialog() = DialogResult.OK Then
-            My.Settings.Save()
+
         End If
     End Sub
 End Class
